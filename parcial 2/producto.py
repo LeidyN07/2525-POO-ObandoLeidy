@@ -1,11 +1,9 @@
-# producto.py
-
 class Producto:
-    def __init__(self, id_producto, nombre, cantidad, precio):
+    def __init__(self, id, nombre, cantidad, precio):
         """
         Representa un producto dentro del inventario.
         """
-        self.id = id_producto
+        self.id = id
         self.nombre = nombre
         self.cantidad = cantidad
         self.precio = precio

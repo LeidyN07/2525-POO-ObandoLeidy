@@ -6,7 +6,7 @@ def menu():
     inventario = Inventario()
 
     while True:
-        print("\n===== SISTEMA DE INVENTARIO =====")
+        print("\n===== 📦 SISTEMA DE INVENTARIO =====")
         print("1. Añadir producto")
         print("2. Eliminar producto")
         print("3. Actualizar producto")
@@ -43,18 +43,18 @@ def menu():
             )
 
         elif opcion == "4":
-            nombre = input("Nombre a buscar: ")
+            nombre = input("Nombre del producto a buscar: ")
             inventario.buscar_producto(nombre)
 
         elif opcion == "5":
             inventario.mostrar_productos()
 
         elif opcion == "6":
-            print("👋 Gracias por usar el sistema. ¡Hasta luego!")
+            print("👋 Saliendo del sistema... ¡Hasta luego!")
             break
 
         else:
-            print("❌ Opción inválida, intenta de nuevo.")
+            print("⚠️ Opción no válida, intenta de nuevo.")
 
 if __name__ == "__main__":
     menu()
